@@ -1,13 +1,14 @@
 import torch
 
-# Model
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s')  # or yolov5n - yolov5x6, custom
-
 # Images
-img = '../images/zidane.jpg'  # or file, Path, PIL, OpenCV, numpy, list
+img = '../images/sml.png'  # or file, Path, PIL, OpenCV, numpy, list
+# # Model
+# model = torch.hub.load('ultralytics/yolov5', 'yolov5s')  # or yolov5n - yolov5x6, custom
+# Custom Model
+model = torch.hub.load(r'E:\GitProjects\yolov5', 'custom', path='../models/yolov5n.pt', source='local', device='0')
 
 # Inference
 results = model(img)
 
 # Results
-results.print()  # or .show(), .save(), .crop(), .pandas(), etc.
+results.show()  # or .show(), .save(), .crop(), .pandas(), etc.
