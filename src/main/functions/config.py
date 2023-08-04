@@ -18,14 +18,15 @@
 import os
 
 root_dir_name = 'main'
+resource_dir_name = 'resources'
 root_path = os.getcwd().split(root_dir_name)[0]
-weights = f'{root_path}{root_dir_name}\models\yolov5s.pt'  # 权重文件路径  看不懂的话只改 最后一个\后面的 文件名
+weights = f'{root_path}{root_dir_name}\models\yolov5s.onnx'  # 权重文件路径
 
 grab_window_title = 'Edge Beta'  # 游戏窗口的名字
 screen_width, screen_height = 2560, 1440  # 屏幕分辨率
-grab_width, grab_height = 480, 480  # 截图大小
+grab_width, grab_height = 640, 640  # 截图大小
 
-top_window_width = 300  # 置顶 窗口大小
+top_window_width = 640  # 置顶 窗口大小
 is_show_top_window = True  # 是否显示置顶窗口
 
 mouse_offset_ratio = 0.5  # 鼠标偏移系数  取值0.2-1  数值越大，鼠标追人的速度越快
@@ -41,7 +42,7 @@ show_list = ['person', 'body', 'head']  # 锁定对象的列表
 cv2_wait_ms = 1  # 每次检测之后程序睡眠的时间   这个数字有点玄学，想不通。有人的改成20左右就能锁到人。
 top_window_name = 'top_window'  # 置顶窗口的名字  不能是中文
 shot_interval_time = 0.1  # 开枪时间间隔
-data = f'{root_path}data\coco128.yaml'
+data = f'{root_path}{resource_dir_name}\yolov5_libs\data\coco128.yaml'
 imgsz = [640, 640]
 iou_thres = 0.45  # 交并集
 grab_rectangle = (
