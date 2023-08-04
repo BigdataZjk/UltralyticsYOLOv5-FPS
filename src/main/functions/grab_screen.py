@@ -70,9 +70,9 @@ def grab_screen_win32_v2(window_title, grab_rect=None):
     hwnd = 0  # 窗口的编号，0号表示当前活跃窗口
     hwnd = win32gui.FindWindow(None, window_title)
     # print(hwnd)
-    if hwnd == 0 and is_show_not_find_window:
-        print(f'{window_title} 窗口没有找到，请检查窗口名字是否正确！')
-        is_show_not_find_window = False
+    # if hwnd == 0 and is_show_not_find_window:
+    #     print(f'{window_title} 窗口没有找到，请检查窗口名字是否正确！')
+    #     is_show_not_find_window = False
     # 根据窗口句柄获取窗口的设备上下文DC（Divice Context）
     hwndDC = win32gui.GetWindowDC(hwnd)
     # 根据窗口的DC获取mfcDC

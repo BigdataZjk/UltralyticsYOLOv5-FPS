@@ -17,12 +17,11 @@
 """
 import os
 
-root_dir_name = 'game_plug_in'
-root_path = os.getcwd().split(root_dir_name)[0]  # game_plug_in 文件夹，不要随便改名字...
+root_dir_name = 'main'
+root_path = os.getcwd().split(root_dir_name)[0]
+weights = f'{root_path}{root_dir_name}\models\yolov5s.pt'  # 权重文件路径  看不懂的话只改 最后一个\后面的 文件名
 
-weights = f'{root_path}{root_dir_name}\model\yolov5s.pt'  # 权重文件路径  看不懂的话只改 最后一个\后面的 文件名
-
-grab_window_title = 'PUBG：绝地求生 '  # 这个地方写 游戏窗口的名字
+grab_window_title = 'Edge Beta'  # 游戏窗口的名字
 screen_width, screen_height = 2560, 1440  # 屏幕分辨率
 grab_width, grab_height = 480, 480  # 截图大小
 
