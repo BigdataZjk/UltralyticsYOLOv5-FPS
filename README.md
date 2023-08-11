@@ -6,7 +6,7 @@
 
 **Description**: 一个Ultralytics的YOLOv5 SOTA模型,适用于类FPS游戏视觉处理和外设响应
 
-**Note**: 基础环境部署详见 https://jinke.love/uncategorized/15.html
+**Note**: 基础环境部署详见 [https://jinke.love/uncategorized/15.html ,](https://jinke.love/machinelearning/15.html) ,每个机器环境部署有差异,onnx和engine模型建议自己导出
 
 # 文件夹结构
 
