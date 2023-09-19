@@ -30,3 +30,6 @@
 
   * [fonts](src%2Fresources%2Ffonts) `各种字体库文件`
   * [yolov5_libs](src%2Fresources%2Fyolov5_libs) `yolov5 GitHub源码`
+
+
+_此仓库所有资料，仅供YOLO学习参考_
